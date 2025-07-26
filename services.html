@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Professional services in branding, content creation, marketing, and web design." />
+  <title>My Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    nav {
+      background: #111;
+      text-align: center;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav button {
+      background: none;
+      border: 1px solid #00d4ff;
+      color: #00d4ff;
+      margin: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #00d4ff;
+      color: #000;
+    }
+
+    .container {
+      padding: 60px 10%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 30px;
+    }
+
+    .service {
+      display: none;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 30px;
+      border: 1px solid #444;
+    }
+
+    .service.active {
+      display: block;
+    }
+
+    .service h2 {
+      color: #00d4ff;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: "✔ ";
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2em; }
+      .container { padding: 30px 5%; }
+      nav button { font-size: 14px; padding: 8px 10px; }
+    }
+
+    @media (max-width: 480px) {
+      h2 { font-size: 1.3em; }
+      .service { padding: 20px; }
+      ul { padding-left: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <button onclick="showSection('service1')">TikTok Ban/Unban</button>
+    <button onclick="showSection('service2')">Instagram ban/unban</button>
+    <button onclick="showSection('service3')">WhatsApp ban/unban</button>
+    <button onclick="showSection('service4')">facebook ban/unban</button>
+    <button onclick="showSection('service5')">youtube ban/unban</button>
+    <button onclick="showSection('service6')">Twitter X ban/unban</button>
+  </nav>
+
+  <div class="container">
+    <h1>💼 My Services</h1>
+
+    <div class="service" id="service1">
+      <h2>📍 TikTok Ban & Unban</h2>
+      <ul>
+        <li>Ban accounts from 100k to 100 million</li>
+        <li>unban all types of bans and all accounts</li>
+        <li>verification Blue mark All accounts</li>
+        <li>claim any username from 3 to 5 characters</li>
+      </ul>
+    </div>
+
+    <div class="service" id="service2">
+      <h2>📍Instagram Ban & Unban </h2>
+      <ul>
+        <li>Ban any account from 100k to 100 million</li>
+        <li>unban all types of bans in a few minutes</li>
+        <li>verification accounts blue mark lifetime</li>
+        <li>claim Any username </li>
+      </ul>
+    </div>
+
+    <div class="service" id="service3">
+      <h2>📍whatsapp ban & unban </h2>
+      <ul>
+        <li>Ban any number and any country</li>
+        <li>unban all types of bans</li>
+        <li>verification All numbers from Meta Lifetime </li>
+        <li>We have fake numbers for WhatsApp use in all countries</li>
+      </ul>
+    </div>
+
+    <div class="service" id="service4">
+      <h2>📍 facebook ban & unban</h2>
+      <ul>
+        <li>Ban any account or page from 100k to 100 million</li>
+        <li>unban all types of bans</li>
+        <li>verification Any account or page Lifetime</li>
+        <li>Delete any video from any page</li>
+      </ul>
+    </div>
+
+    <div class="service" id="service5">
+      <h2>📍 youtube ban & unban</h2>
+      <ul>
+        <li>Ban any channel from 100k to 15 million</li>
+        <li>unban all types of bans</li>
+        <li>Delete any video from any channel even if it has 100 million subscribers</li>
+      </ul>
+    </div>
+    <div class="service" id="service6">
+      <h2>📍 Twitter x ban & unban</h2>
+      <ul>
+        <li>Ban any account, regardless of the number of followers</li>
+        <li>unban all types of ban</li>
+        <li>claim any username</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.service').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+
+    // Show the first section by default
+    window.onload = function() {
+      showSection('service1');
+    };
+  </script>
+
+</body>
+</html>
+<a href="Untitled-2.html"></a>

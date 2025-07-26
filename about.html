@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #fff;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 40px;
+      color: #38bdf8;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .services-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .service-card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.5);
+    }
+
+    .service-card h2 {
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    .service-card li {
+      margin-left: 20px;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #22c55e;
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💼 My Services</h1>
+
+  <div class="services-container">
+
+    <!-- كرر لكل كارت -->
+    <div class="service-card">
+      <h2>📍 TikTok unban</h2>
+      <li>unban all types ban</li>
+      <li>100k-1m-10m-50m-100m followers</li>
+      <li>time: 24h_7 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">300-7000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now! </a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Instagram unban</h2>
+      <li>unban all types ban</li>
+      <li>time: 10m only</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">2000-6000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Twitter X unban</h2>
+      <li>Unban all types ban</li>
+      <li>time: 3 day_7 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">1500-4000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Tik tok ban</h2>
+      <li>ban any account</li>
+      <li>100k-1m-10m-50m-100m followers</li>
+      <li>time:24 h_7 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">100-6000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Instagram ban</h2>
+      <li>ban any account</li>
+      <li>100k-1m-10m-50m-100m followers</li>
+      <li>time: 24 h_72 h max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">100-4500$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍Twitter X ban </h2>
+      <li>ban any account</li>
+      <li>1m_30m followers</li>
+      <li>time: 72 h_7 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">300-6000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 TikTok claim</h2>
+      <li>not least 4 letters</li>
+      <li>time: 24 h_14 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">4000-8000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Instagram claim</h2>
+      <li>not least 4 letters</li>
+      <li>time: 24 h_14 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">7500-25000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+
+    <div class="service-card">
+      <h2>📍 Twitter X claim</h2>
+      <li>not least 5 letters</li>
+      <li>time:24 h_40 day max</li>
+      <li>Success rate: 100%100</li>
+      <div class="price">2000-6000$</div>
+      <a href="#" class="contact-btn" onclick="openTelegram()">Order now!</a>
+    </div>
+  </div>
+
+  <script>
+    function openTelegram() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      const username = "uunban";
+      if (/android/i.test(userAgent) || /iPad|iPhone|iPod/.test(userAgent)) {
+        window.location.href = `tg://resolve?domain=${username}`;
+      } else {
+        window.open(`https://t.me/uunban/k/#@${username}`, "_blank");
+      }
+    }
+  </script>
+
+</body>
+</html>
